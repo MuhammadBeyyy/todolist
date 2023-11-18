@@ -3,7 +3,7 @@ const tasks=[]
 
 //Functionadd task
 function addTask() {
-    const taskInput = document.getElementById('tasksInput').value;
+    const taskInput = document.getElementById('taskInput').value;
     if (taskInput === ''){
         alert('Please enter a task.');
         return;
@@ -16,7 +16,7 @@ function addTask() {
 updateTaskList();
 
 //Clear the input
-document.getElementById('tasksInput').value='';
+document.getElementById('taskInput').value='';
 }
 
 //function to remove a task
