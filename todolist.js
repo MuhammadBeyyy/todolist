@@ -1,22 +1,22 @@
- //JavaScript array to store tasks
+ //JavaScript array to store tasks in an empty array
 const tasks=[]
 
-//Function to add task
+//Functionadd task
 function addTask() {
-    const taskInput = document.getElementById('taskInput').value;
+    const taskInput = document.getElementById('tasksInput').value;
     if (taskInput === ''){
         alert('Please enter a task.');
         return;
     } else {
         //Add the task to the tasks array
-        tasks.push(taskInput);   
+        tasks.push(tasksInput);   
     }
 
    //Update the DOM
 updateTaskList();
 
 //Clear the input
-document.getElementById('taskInput').value='';
+document.getElementById('tasksInput').value='';
 }
 
 //function to remove a task
